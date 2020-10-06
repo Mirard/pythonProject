@@ -19,4 +19,4 @@ def user_info(name, surname, year, city, email, phone):
             f"Город - {city}, Почта - {email}, Телефон - {phone}")
 
 
-user_info(user_name, user_surname, user_year, user_city, user_email, user_phone)
+user_info(name=user_name, surname=user_surname, year=user_year, city=user_city, email=user_email, phone=user_phone)
