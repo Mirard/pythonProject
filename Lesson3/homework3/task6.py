@@ -18,7 +18,7 @@ def first_char(word):
         return word, isint_flag
 
 
-# Функция фактической замены 1й буквы на значение в верхем регистре и озврата результата в виде строки
+# Функция фактической замены 1й буквы на значение в верхем регистре и возврата результата в виде строки
 def replace_char(f_char, full_word):
     full_word = list(full_word)
     full_word.remove(f_char)
