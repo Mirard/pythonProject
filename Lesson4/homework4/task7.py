@@ -14,10 +14,10 @@ def fact_calc(fact):
     while index <= fact:
         result = result * index
         index = index + 1
-    yield result
+        yield result
 
 
 rand_num = random.randint(1, 100)
 for num in fact_calc(rand_num):
-    print(f"Факториал {rand_num}: ", num)
+    print(num)
 print("Проверка факториала с помощью math.factorial: ", math.factorial(rand_num))
