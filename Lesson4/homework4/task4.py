@@ -13,8 +13,7 @@ index = 0
 while index < num_length:
     num_list.append(random.randint(0, 20))
     index = index + 1
-for elem in num_list:
-    if num_list.count(elem) == 1:
-        result_list.append(elem)
+
+result_list = ([el for el in num_list if num_list.count(el) == 1])
 
 print(f"Исходный список: {num_list}\nПолученный список: {result_list}")
