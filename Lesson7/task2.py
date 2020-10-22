@@ -24,7 +24,7 @@ class Clothes(MyClothes):
             return self.size * 2 + 0.3
         else:
             print("Такая одежда не производится")
-            return None
+            return 0
 
 
 c1 = Clothes("Coat", "MyCoat", 6.5)
@@ -33,3 +33,4 @@ c3 = Clothes("Random", "MyRand", 1)
 print("Проверяем пальто: ", c1.calc)
 print("Проверяем костюм: ", c2.calc)
 print("Проверяем одежду не из списка: ", c3.calc)
+print("Общий расход ткани: ", c1.calc + c2.calc + c3.calc)
