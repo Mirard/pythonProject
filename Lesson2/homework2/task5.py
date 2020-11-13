@@ -1,7 +1,7 @@
 num_list = [7, 5, 3, 3, 2]
 print("Ваш список: ", num_list)
 user_num = input("Введите целое число, чтобы добавить его в список, для выхода введите exit >>> ")
-while user_num != "exit":
+while user_num.lower() != "exit":
     index = 0
     try:
         new_num = int(user_num)

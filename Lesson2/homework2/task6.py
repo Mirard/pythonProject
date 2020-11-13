@@ -7,7 +7,7 @@ product_struct = []
 index = 1
 
 user_string = input(f"Введите название товара №{index}, для выхода из заполнения введите exit >>> ")
-while user_string != "exit":
+while user_string.lower() != "exit":
     while len(user_string) == 0 or len(user_string) == user_string.count(" "):
         print("\nЗначение не должно быть пустым. Введите новое значение или exit для выхода")
         user_string = input(f"Введите название товара №{index}, для выхода из заполнения введите exit >>> ")
