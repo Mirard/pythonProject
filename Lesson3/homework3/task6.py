@@ -1,5 +1,10 @@
 # Функция замены первого элемента слова
 def first_char(word):
+    char_list = list(word)
+    not_lat = 0
+    for char in char_list:
+        if not (65 <= ord(char) <= 90 or 97 <= ord(char) <= 122):
+            not_lat = 1
     isint_flag = 0
     if len(word) == 0:
         isint_flag = 1
@@ -10,11 +15,23 @@ def first_char(word):
             new_first_elem = int(new_first_elem)
             isint_flag = 1
         except AttributeError:
-            word = replace_char(new_first_elem, word)
+            if not_lat != 1:
+                word = replace_char(new_first_elem, word)
+            else:
+                isint_flag = 1
+                return word, isint_flag
         except TypeError:
-            word = replace_char(new_first_elem, word)
+            if not_lat != 1:
+                word = replace_char(new_first_elem, word)
+            else:
+                isint_flag = 1
+                return word, isint_flag
         except ValueError:
-            word = replace_char(new_first_elem, word)
+            if not_lat != 1:
+                word = replace_char(new_first_elem, word)
+            else:
+                isint_flag = 1
+                return word, isint_flag
         return word, isint_flag
 
 
