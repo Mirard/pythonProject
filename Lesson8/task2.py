@@ -4,7 +4,7 @@ class OwnError(Exception):
         self.txt = txt
 
 
-class ZeroDivisionError(Exception):
+class __ZeroDivisionError(Exception):
     def __init__(self, txt):
         self.txt = txt
 
