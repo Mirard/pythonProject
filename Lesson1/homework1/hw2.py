@@ -26,3 +26,5 @@ else:
             print(f"Время: 0{hours}:0{mins}:{secs}")
         else:
             print(f"Время: 0{hours}:0{mins}:0{secs}")
+
+print("Время вариант2: {:>02}:{:>02}:{:>02}".format(hours, mins, secs))
